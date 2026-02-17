@@ -61,3 +61,4 @@ El sistema puede ser operado por usuarios con conocimientos básicos en electró
 La arquitectura detallada del sistema y los requerimientos a nivel sistema se encuentran documentados en el siguiente enlace:
 
 [SRS del Proyecto] https://drive.google.com/file/d/1PiY6Ht6pkZYH8bzkXsdswsvH32d1uN9j/view?usp=sharing
+archivo md: https://github.com/jars1222/projecto_de_embebidos/blob/main/Overview/SRS.md
