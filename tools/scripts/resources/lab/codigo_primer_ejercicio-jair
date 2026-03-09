@@ -1,0 +1,100 @@
+// BOTONES
+int boton1 = 2;
+int boton2 = 3;
+int boton3 = 4;
+int boton4 = 5;
+int reset  = 10;
+
+// LEDS
+int led1 = 6;
+int led2 = 7;
+int led3 = 8;
+int led4 = 9;
+
+// CONTADORES
+int votos1 = 0;
+int votos2 = 0;
+int votos3 = 0;
+int votos4 = 0;
+
+// ESTADOS ANTERIORES (para anti-rebote simple)
+bool estadoAnt1 = HIGH;
+bool estadoAnt2 = HIGH;
+bool estadoAnt3 = HIGH;
+bool estadoAnt4 = HIGH;
+bool estadoAntReset = HIGH;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(boton1, INPUT_PULLUP);
+  pinMode(boton2, INPUT_PULLUP);
+  pinMode(boton3, INPUT_PULLUP);
+  pinMode(boton4, INPUT_PULLUP);
+  pinMode(reset,  INPUT_PULLUP);
+
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+}
+
+void loop() {
+
+  bool estado1 = digitalRead(boton1);
+  bool estado2 = digitalRead(boton2);
+  bool estado3 = digitalRead(boton3);
+  bool estado4 = digitalRead(boton4);
+  bool estadoReset = digitalRead(reset);
+
+  // BOTON 1
+  if (estado1 == LOW && estadoAnt1 == HIGH) {
+    votos1++;
+    Serial.print("candidato: ");
+    Serial.println(votos1);
+    digitalWrite(led1, HIGH);
+    delay(150);
+    digitalWrite(led1, LOW);
+  }
+  estadoAnt1 = estado1;
+
+  // BOTON 2
+  if (estado2 == LOW && estadoAnt2 == HIGH) {
+    votos2++;
+    Serial.print("candidato 2: ");
+    Serial.println(votos2);
+    digitalWrite(led2, HIGH);
+    delay(150);
+    digitalWrite(led2, LOW);
+  }
+  estadoAnt2 = estado2;
+
+  // BOTON 3
+  if (estado3 == LOW && estadoAnt3 == HIGH) {
+    votos3++;
+    Serial.print("candidato 3: ");
+    Serial.println(votos3);
+    digitalWrite(led3, HIGH);
+    delay(150);
+    digitalWrite(led3, LOW);
+  }
+  estadoAnt3 = estado3;
+
+  // BOTON 4
+  if (estado4 == LOW && estadoAnt4 == HIGH) {
+    votos4++;
+    Serial.print("candidato 4: ");
+    Serial.println(votos4);
+    digitalWrite(led4, HIGH);
+    delay(150);
+    digitalWrite(led4, LOW);
+  }
+  estadoAnt4 = estado4;
+
+  // RESET
+  if (estadoReset == LOW && estadoAntReset == HIGH) {
+    votos1 = votos2 = votos3 = votos4 = 0;
+    Serial.println("RESET DE VOTOS");
+  }
+  estadoAntReset = estadoReset;
+}
