@@ -1,0 +1,112 @@
+// Pines
+int b1 = 2;
+int b2 = 3;
+int b3 = 4;
+
+int ledV = 8;
+int ledR = 9;
+
+// Variables
+int estado = 0;
+int intentos = 0;
+
+unsigned long tBoton = 0;
+unsigned long tBloqueo = 0;
+
+void setup() {
+
+  pinMode(b1, INPUT_PULLUP);
+  pinMode(b2, INPUT_PULLUP);
+  pinMode(b3, INPUT_PULLUP);
+
+  pinMode(ledV, OUTPUT);
+  pinMode(ledR, OUTPUT);
+}
+
+void loop() {
+
+  unsigned long ahora = millis();
+
+  bool B1 = digitalRead(b1) == LOW;
+  bool B2 = digitalRead(b2) == LOW;
+  bool B3 = digitalRead(b3) == LOW;
+
+  // BLOQUEO 10s
+  if (estado == 4) {
+    if (ahora - tBloqueo > 10000) {
+      estado = 0;
+      intentos = 0;
+    }
+    return;
+  }
+
+  // TIEMPO MAX ENTRE BOTONES
+  if (estado != 0 && ahora - tBoton > 5000) {
+    digitalWrite(ledR, HIGH);
+    delay(300);
+    digitalWrite(ledR, LOW);
+
+    estado = 0;
+    intentos++;
+  }
+
+  switch (estado) {
+
+    case 0: // espera boton 1
+      if (B1) {
+        estado = 1;
+        tBoton = ahora;
+      }
+      else if (B2 || B3) {
+        digitalWrite(ledR, HIGH);
+        delay(300);
+        digitalWrite(ledR, LOW);
+
+        intentos++;
+      }
+    break;
+
+    case 1: // espera boton 3
+      if (B3) {
+        estado = 2;
+        tBoton = ahora;
+      }
+      else if (B1 || B2) {
+        digitalWrite(ledR, HIGH);
+        delay(300);
+        digitalWrite(ledR, LOW);
+
+        estado = 0;
+        intentos++;
+      }
+    break;
+
+    case 2: // espera boton 2
+      if (B2) {
+
+        digitalWrite(ledV, HIGH);
+        delay(500);
+        digitalWrite(ledV, LOW);
+
+        estado = 0;
+        intentos = 0;
+      }
+      else if (B1 || B3) {
+
+        digitalWrite(ledR, HIGH);
+        delay(300);
+        digitalWrite(ledR, LOW);
+
+        estado = 0;
+        intentos++;
+      }
+    break;
+  }
+
+  // BLOQUEO SI HAY 3 ERRORES
+  if (intentos >= 3) {
+    estado = 4;
+    tBloqueo = millis();
+  }
+
+}
