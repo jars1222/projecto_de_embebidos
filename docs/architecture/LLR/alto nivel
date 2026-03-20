@@ -1,0 +1,21 @@
+El sistema de control del dron deberá estar dividido en varios módulos principales que interactúan entre sí
+para garantizar el funcionamiento adecuado del vehículo aéreo. Estos módulos incluyen el sistema de
+comunicación inalámbrica, el sistema de medición de orientación, el módulo de control de motores y el
+módulo de lógica de estabilización.
+
+El módulo de comunicación será responsable de establecer la conexión inalámbrica con el control remoto
+mediante el módulo nRF24L01. Este módulo recibirá continuamente los datos de control enviados por el
+transmisor y los pondrá a disposición del sistema principal para su procesamiento.
+
+El módulo de sensores utilizará el MPU6050 para obtener información sobre la inclinación y movimiento del dron.
+Los datos obtenidos del acelerómetro y el giroscopio permitirán determinar el ángulo de inclinación
+en los ejes principales, lo cual es fundamental para aplicar correcciones de estabilidad durante el vuelo.
+
+El módulo de control de motores será responsable de generar señales PWM hacia los cuatro motores del dron.
+Estas señales determinarán la velocidad de rotación de cada motor y permitirán controlar el movimiento
+del dron en diferentes direcciones. Cada motor podrá recibir una potencia distinta dependiendo de las condiciones
+de vuelo y las correcciones necesarias.
+
+El módulo de estabilización será el encargado de combinar la información proveniente del control remoto
+con los datos del sensor de orientación para calcular las correcciones necesarias en cada motor.
+Este módulo garantizará que el dron mantenga una posición estable en el aire y responda correctamente a los comandos del usuario.
