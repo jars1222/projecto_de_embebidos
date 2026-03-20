@@ -1,0 +1,22 @@
+El sistema deberá implementar una inicialización del hardware durante el arranque del microcontrolador
+Arduino Pro Mini, donde se configurarán los pines de salida utilizados para el control de los motores
+y se establecerá la comunicación con los módulosexternos mediante los protocolos SPI e I2C.
+
+El software deberá inicializar el módulo nRF24L01 configurando la dirección de comunicación,
+la potencia de transmisión y el modo de recepción de datos. Posteriormente,
+el sistema deberá verificar continuamente si existen datos disponibles en el buffer de recepción
+para actualizar las variables de control del dron.
+
+Asimismo, el sistema deberá configurar la comunicación I2C con el sensor MPU6050,
+inicializando sus registros internos y habilitando la lectura de los datos del acelerómetro y del giroscopio.
+El software deberá obtener periódicamente los valores de aceleración en los ejes X, Y y Z para calcular los ángulos
+de inclinación mediante funciones trigonométricas.
+
+El algoritmo de control deberá calcular la potencia de cada motor a partir de los valores
+de throttle, roll y pitch recibidos desde el control remoto, junto con las correcciones derivadas
+de la inclinación del dron. Estos valores deberán limitarse dentro de un rango permitido antes de enviarse
+a los pines PWM del microcontrolador.
+
+Finalmente, el sistema deberá ejecutar este proceso dentro del ciclo principal del programa, repitiendo continuamente
+las etapas de lectura de radio, lectura de sensores, cálculo de correcciones y actualización de motores
+para mantener el control del dron en tiempo real.
