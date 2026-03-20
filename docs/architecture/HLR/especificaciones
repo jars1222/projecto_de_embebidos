@@ -1,0 +1,24 @@
+El sistema de control del dron tiene como objetivo permitir la operación remota de un vehículo aéreo
+pequeño de cuatro motores mediante un sistema de comunicación inalámbrica y sensores de orientación. El
+software deberá ejecutarse en un microcontrolador Arduino Pro Mini y será responsable de coordinar la
+lectura de sensores, la recepción de comandos remotos y el control de los motores para mantener la
+estabilidad del dron durante el vuelo.
+
+El sistema deberá recibir comandos desde un control remoto utilizando el módulo de radio nRF24L01, los
+cuales incluirán información sobre potencia del motor (throttle), inclinación lateral (roll) y movimiento hacia
+adelante o hacia atrás (pitch). Estos datos deberán procesarse continuamente para ajustar la velocidad de
+cada motor del dron.
+
+El sistema también deberá obtener información de orientación mediante el sensor inercial MPU6050, que
+proporciona datos de aceleración y velocidad angular en los tres ejes. Con esta información, el software
+deberá calcular la inclinación del dron y aplicar correcciones en la potencia de los motores para mantener la
+estabilidad del vuelo.
+
+Además, el sistema deberá controlar cuatro motores tipo coreless mediante señales PWM generadas por el
+microcontrolador. Estas señales serán moduladas de acuerdo con los datos del control remoto y las
+correcciones generadas por el sistema de estabilización. El software deberá ejecutarse en tiempo real,
+realizando ciclos continuos de lectura de sensores, recepción de datos y ajuste de motores.
+
+Finalmente, el sistema deberá incluir mecanismos básicos de seguridad, como limitar la velocidad máxima de
+los motores, evitar valores fuera de rango y mantener una operación estable incluso cuando se presenten
+pequeñas variaciones en los sensores.
