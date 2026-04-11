@@ -1,0 +1,6 @@
+Matriz_de_Responsabilidades_Equipo.txt
+"La organización del equipo es fundamental para el éxito del proyecto:
+* Daniel y Salvador: Líderes en el ensamblaje mecánico del dron y validación física.
+* Jair y Daniel: Responsables exclusivos del diseño, ruteo y validación de la PCB.
+* Salvador y Rafael: Encargados de la programación del firmware y los protocolos TX/RX.
+* Rafael y Daniel: Gestión de toda la documentación técnica, incluyendo este reporte y el SRS."

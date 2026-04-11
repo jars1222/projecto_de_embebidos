@@ -1,0 +1,2 @@
+Justificacion_de_Componentes_Comerciales.txt
+"El uso de componentes comerciales disponibles es una restricción de diseño y una ventaja económica. Daniel Martínez Sánchez justifica esta decisión para asegurar la mantenibilidad (NFR-05), permitiendo el reemplazo fácil de módulos como motores, hélices o el chip LoRa en caso de falla. Se asume la total compatibilidad entre los módulos seleccionados."

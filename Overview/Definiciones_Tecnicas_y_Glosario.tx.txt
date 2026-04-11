@@ -1,0 +1,6 @@
+Definiciones_Tecnicas_y_Glosario.txt
+"Para una comprensión uniforme, Daniel Martínez Sánchez define los siguientes términos:
+* PCB: Placa de Circuito Impreso donde se integrará la electrónica del mando.
+* Joystick: Entrada analógica para el control preciso de movimiento.
+* Controlador de Vuelo: Unidad central encargada de la estabilidad de la aeronave.
+* SPI/UART: Interfaces de hardware para la comunicación entre el MCU y el módulo LoRa."

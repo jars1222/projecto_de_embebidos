@@ -1,0 +1,2 @@
+Protocolos_de_Seguridad_UAV.txt
+"El sistema operará bajo estrictas normas de seguridad para sistemas UAV. El objetivo es evitar riesgos físicos y eléctricos durante todas las fases de operación. Se ha implementado el requerimiento FR-05, que garantiza un encendido y apagado seguro para proteger la integridad de los componentes y del usuario."

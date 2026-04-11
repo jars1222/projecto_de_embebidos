@@ -1,0 +1,2 @@
+Arquitectura_de_Sistemas_Embebidos.txt
+"El sistema se define como un sistema embebido parcialmente independiente. Consta de una unidad aérea y una de control. El microcontrolador (MCU) actúa como el cerebro, interpretando señales de joysticks analógicos y traduciéndolas a protocolos de comunicación LoRa. Esta arquitectura modular permite que el controlador de vuelo reciba señales externas de manera fluida."

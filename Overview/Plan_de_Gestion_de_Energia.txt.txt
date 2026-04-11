@@ -1,0 +1,2 @@
+Plan_de_Gestion_de_Energia.txt
+"Una restricción crítica son las limitaciones de las baterías. Daniel Martínez Sánchez ha establecido que el consumo energético (NFR-02) debe ser compatible con operaciones prolongadas. Se asume que las baterías proporcionarán energía suficiente tanto para los motores del dron como para la lógica del control remoto basado en PCB."
