@@ -1,0 +1,7 @@
+Analizador de Logs de Comunicación LoRa
+Objetivo: Validar NFR-01 (Performance) y NFR-03 (Reliability).
+
+Este script procesa las salidas seriales para calcular:
+1. Latencia promedio entre el envío del comando desde el joystick y la recepción en el FC.
+2. Tasa de éxito en la entrega de paquetes (Packet Delivery Ratio).
+3. Detección de interferencias o pérdidas de señal críticas (NFR-04).

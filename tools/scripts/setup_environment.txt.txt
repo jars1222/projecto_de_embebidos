@@ -1,0 +1,10 @@
+setup_environment.txt
+
+Sript de Configuración de Entorno de Desarrollo (IDE/Toolchain)
+Proyecto: Sistema de Control de Dron LoRa 
+
+Este script automatiza la instalación de las bibliotecas necesarias para el microcontrolador
+1. Verificación de Python 3.x para herramientas de flasheo.
+2. Instalación de la biblioteca RadioHead para el manejo del chip LoRa
+3. Configuración de parámetros de compilación para buses SPI y UART
+4. Definición de variables de entorno para el compilador de C

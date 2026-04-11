@@ -1,0 +1,9 @@
+calibrate_joysticks.txt
+
+Script de Calibración de Entradas Analógicas
+Referencia: FR-03 (Interpretación de Joysticks) [cite: 16, 66]
+
+Pasos de calibración:
+1. Lectura del valor central (punto muerto) para establecer el offset de software.
+2. Mapeo de valores mínimos (0) y máximos (1023/4095) de los ejes X e Y[cite: 81].
+3. Generación de tabla de compensación para eliminar el "jitter" o ruido eléctrico[cite: 11].

@@ -1,0 +1,10 @@
+flash_firmware.txt
+
+Protocolo de Carga de Firmware (Upload Tool)
+Responsables: Salvador y Rafael [cite: 110]
+
+Comandos para subir el código al MCU del control remoto y del receptor del dron:
+1. Identificación del puerto COM/ttyUSB.
+2. Verificación de integridad del binario (.hex/.bin).
+3. Comando de escritura: avrdude/esptool -p [MCU_MODEL] -c [PROGRAMMER] -U flash:w:main.hex.
+4. Verificación post-escritura para asegurar que los requerimientos de tiempo real se cumplan.

@@ -1,0 +1,7 @@
+Herramienta de Monitoreo Energético
+Referencia: NFR-02 (Power Consumption) [cite: 52, 71]
+
+Script para simular el consumo basado en:
+1. Consumo base del microcontrolador (MCU)[cite: 15].
+2. Picos de consumo del módulo LoRa durante la transmisión[cite: 10, 104].
+3. Estimación de tiempo de vida de la batería LiPo bajo carga continua[cite: 61, 99].
