@@ -1,0 +1,20 @@
+MAPEO DE PINES Y CONFIGURACIÓN DE HARDWARE
+DOCUMENTO DE REFERENCIA PARA PROGRAMACIÓN [cite: 110]
+
+1. CONEXIONES DEL MICROCONTROLADOR (MCU) [cite: 82, 83]
+   -------------------------------------------------
+   FUNCIÓN          | PIN MCU | INTERFAZ | NOTAS
+   -------------------------------------------------
+   SPI MOSI         | 11      | SPI      | Datos al LoRa [cite: 83]
+   SPI MISO         | 12      | SPI      | Datos desde LoRa [cite: 83]
+   SPI SCK          | 13      | SPI      | Reloj Maestro
+   LoRa CS / NSS    | 10      | Digital  | Chip Select
+   LoRa Reset       | 9       | Digital  | Reinicio Módulo
+   Joystick X (Der) | A0      | ADC      | Eje Horizontal [cite: 81]
+   Joystick Y (Der) | A1      | ADC      | Eje Vertical [cite: 81]
+   Botón Failsafe   | 4       | Digital  | Entrada Pull-up [cite: 78]
+   LED Estado       | 7       | Digital  | Indicador Enlace [cite: 79]
+
+2. INTERFAZ DRON - CONTROLADOR DE VUELO [cite: 97, 98]
+   - Salida del Receptor LoRa: Configurada en modo PPM o Serial para el FC. [cite: 84]
+   - Alimentación: El receptor se alimenta directamente del puerto 5V del FC. [cite: 99]

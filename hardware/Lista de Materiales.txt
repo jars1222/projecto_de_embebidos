@@ -1,0 +1,21 @@
+LISTA DE MATERIALES (BILL OF MATERIALS - BOM)
+PROYECTO: SISTEMA DE CONTROL DE DRON CON COMUNICACIÓN LORA
+ESTADO: VERIFICADO PARA ADQUISICIÓN
+
+1. UNIDAD DE CONTROL (REMOTO)
+   - Microcontrolador (MCU): ATmega328P o ESP32 (Sujeto a disponibilidad de pines SPI). [cite: 82, 83]
+   - Módulo LoRa: Chip SX1278 (433MHz) o RFM95 (915MHz) con interfaz SPI. [cite: 83, 104]
+   - Joysticks: 2x Módulos analógicos de 2 ejes (X, Y) con pulsador integrado. [cite: 16, 77]
+   - Antena: Antena de 2dBi o 5dBi con conector SMA para rango extendido. [cite: 10]
+   - Alimentación: Batería LiPo 1S o 2S con regulador de voltaje a 3.3V. [cite: 52, 61, 85]
+
+2. UNIDAD AÉREA (DRON)
+   - Frame: Kit comercial de fibra de carbono o plástico ABS resistente. [cite: 9, 34]
+   - Controlador de Vuelo: Compatible con entradas PWM o SBUS para recibir datos LoRa. [cite: 18, 59, 84, 97]
+   - Motores: 4x Motores Brushless con sus respectivos ESC (Electronic Speed Controllers). [cite: 99]
+   - Módulo Receptor LoRa: Idéntico al transmisor para garantizar compatibilidad. [cite: 58, 95]
+
+3. COMPONENTES PASIVOS PARA PCB 
+   - Condensadores: 10uF y 100nF para filtrado de ruido en la alimentación.
+   - Resistencias: 10k para pull-up en botones de operación. [cite: 78]
+   - Conectores: Headers macho/hembra para módulos extraíbles. [cite: 74]

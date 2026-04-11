@@ -1,0 +1,115 @@
+ ESTRUCTURA DE LA PRESENTACIÓN (DIAPOSITIVAS)
+
+ DIAPOSITIVA 1: PORTADA
+
+Título del Proyecto: AI-PLAYER WAGE PREDICTOR: Inteligencia Artificial para la Estimación de Ingresos Salariales del Jugador en Ligas Seleccionadas.
+
+Integrantes: * Daniel Martínez Sánchez
+
+José Salvador Montes Luna
+
+Diego Castillo Salazar
+
+José Jair González Morales
+
+Problema Central: La dificultad de tasar económicamente a un jugador basándose puramente en su rendimiento en el campo sin sesgos humanos.
+
+Objetivo a Resolver: Desarrollar un sistema objetivo que prediga el salario justo de un jugador en euros. 
+
+
+ DIAPOSITIVA 2: CONTEXTO REAL Y JUSTIFICACIÓN
+
+Contexto Real: En el fútbol moderno y la industria de los videojuegos (como FC 26 / FIFA), el mercado de fichajes mueve miles de millones de euros. Las agencias y clubes necesitan saber si están pagando de más o de menos por un jugador basándose en su rendimiento real y no solo en su "fama".
+
+Justificación: Implementar Machine Learning elimina la subjetividad humana. Permite a clubes, analistas y agencias de representación estimar de forma matemática el valor salarial de un atleta según sus estadísticas métricas (tiro, pase, físico, edad).
+
+
+ DIAPOSITIVA 3: OBJETIVOS
+Objetivo General: Diseñar, entrenar y evaluar modelos de Inteligencia Artificial para predecir los salarios de jugadores de fútbol, comparando métricas de error para encontrar el algoritmo más preciso.
+
+Objetivo Específico (IA): Determinar el salario futuro en euros de cada jugador mediante un modelo de IA que analice su rendimiento y demografía. El proyecto busca optimizar la predicción de ganancias en ligas específicas comparando la eficiencia de Elastic Net, Regresión Lineal y Random Forest, apoyándose en PCA para reducir la complejidad de los datos técnicos.
+
+
+ DIAPOSITIVA 4: DESCRIPCIÓN DEL DATASET Y EDA (Análisis Exploratorio)
+Descripción del Dataset: Utilizamos los datos de FC 26 (y FIFA 15-22).
+
+FC 26   18405 filas y 110 columnas.
+
+ FIFA 15-22: 144323 filas y 111 columnas.
+
+Columnas a Trabajar: features = ['passing', 'shooting', 'physic', 'dribbling', 'age', 'height_cm', 'weight_kg', 'skill_moves']
+target = 'wage_eur'
+columna_color = 'value_eur'
+
+
+Análisis Exploratorio de Datos (EDA): Identificamos que la variable objetivo (wage_eur) tiene una distribución asimétrica (pocos jugadores ganan millones, la mayoría gana salarios bajos). También descubrimos altas correlaciones entre habilidades técnicas (como pase y regate).
+
+
+DIAPOSITIVA 5: APRENDIZAJE SUPERVISADO VS NO SUPERVISADO
+Aprendizaje Supervisado: El algoritmo aprende de datos que ya tienen la "respuesta correcta". En nuestro caso, le damos las habilidades del jugador y le decimos cuál es su wage_eur real para que aprenda a predecirlo. (Modelos: Regresión Lineal, Elastic Net, Random Forest).
+
+Aprendizaje No Supervisado: El algoritmo busca patrones en los datos sin tener una etiqueta o respuesta previa. Agrupa o simplifica la información basándose en similitudes. (Modelo: PCA).
+
+
+DIAPOSITIVA 6: Comparación Feature vs Target
+
+ Resumen: Target vs. Features
+Target (Objetivo):
+
+wage_eur → salario semanal en euros.
+
+Features (Características):
+
+Técnicas: shooting, passing, dribbling, physic
+
+Demográficas: age, height, weight
+
+Especiales: skill_moves
+
+Relaciones Clave (Target vs. Features):
+
+Shooting & Dribbling → fuerte correlación positiva con el salario.
+
+Edad → relación parabólica: sube entre 25–30 años, baja después de los 32.
+
+Skill Moves → multiplicador de valor en el mercado.
+
+Visualización (Scatter Matrix):
+
+Eje X: Features (habilidades).
+
+Eje Y: Target (salario).
+
+Tendencia ascendente con outliers (jugadores élite).  
+
+Justifica el uso de modelos no lineales (Random Forest) y regularización (Elastic Net) para manejar extremos.
+
+
+CUANDO EN REALIDAD EL DESMADRE LO REALIZO UN CHICO LLAMADO MISAEL SE PASA DE LANZA LO QUE HIZO EN EL  BAÑO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
