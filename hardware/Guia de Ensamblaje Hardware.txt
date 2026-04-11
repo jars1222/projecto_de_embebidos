@@ -1,0 +1,18 @@
+GUÍA DE ENSAMBLAJE DE HARDWARE Y AERONAVE
+RESPONSABLES: SALVADOR Y DANIEL [cite: 106]
+
+1. ENSAMBLAJE DE LA UNIDAD AÉREA [cite: 34]
+   - Paso 1: Atornillar motores al frame asegurando que los cables no queden atrapados. [cite: 99]
+   - Paso 2: Montar el Controlador de Vuelo (FC) en el centro de gravedad del dron. [cite: 18]
+   - Paso 3: Soldar los ESC a la placa de distribución de potencia (PDB).
+   - Paso 4: Conectar el receptor LoRa a los pines UART/PPM del FC según el esquema. [cite: 84, 95]
+
+2. ENSAMBLAJE DEL CONTROL REMOTO [cite: 35]
+   - Paso 1: Soldar el MCU y el módulo LoRa a la PCB diseñada. [cite: 103, 104]
+   - Paso 2: Instalar los joysticks mecánicamente en la placa y asegurar sus conexiones. [cite: 102]
+   - Paso 3: Conectar la antena externa y asegurar que el conector SMA esté firme. [cite: 10, 104]
+
+3. PRUEBAS INICIALES DE HARDWARE (PRE-VUELO) [cite: 92]
+   - Verificar continuidad en tierra para evitar cortocircuitos.
+   - Comprobar que el voltaje de la batería sea el adecuado (mínimo 3.7V por celda). [cite: 61]
+   - Validar que los joysticks no tengan obstrucciones mecánicas en sus recorridos. [cite: 77]
