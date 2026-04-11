@@ -1,0 +1,2 @@
+6. Test_Integration_PWM_Output.txt
+Comprueba que el receptor LoRa envíe las señales correctas al controlador de vuelo. Se valida que los pulsos PWM o seriales correspondan a los comandos enviados desde el mando.

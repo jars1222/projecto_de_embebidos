@@ -1,0 +1,2 @@
+4. Test_Unit_Button_Interrupts.txt
+Asegura que los botones de operación activen las interrupciones correspondientes en el firmware. Es crítico para funciones de respuesta inmediata como el frenado de emergencia.

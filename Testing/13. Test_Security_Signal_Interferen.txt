@@ -1,0 +1,1 @@
+13. Test_Security_Signal_Interference.txtEvalúa la resistencia del sistema ante interferencias de otras señales de radio en la misma banda. Se busca minimizar la pérdida de paquetes en entornos ruidosos (NFR-04).

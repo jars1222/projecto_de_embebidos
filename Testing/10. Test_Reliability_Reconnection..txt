@@ -1,0 +1,2 @@
+10. Test_Reliability_Reconnection.txt
+Simula una pérdida temporal de señal para validar que el sistema recupere el enlace automáticamente una vez que el dron vuelve a estar en rango.

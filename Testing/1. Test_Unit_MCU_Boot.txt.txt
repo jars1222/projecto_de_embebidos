@@ -1,0 +1,2 @@
+1. Test_Unit_MCU_Boot.txt
+Valida que el microcontrolador inicie correctamente y configure sus registros internos. Se verifica la carga del firmware básico y la estabilidad del reloj interno antes de ejecutar el bucle principal.

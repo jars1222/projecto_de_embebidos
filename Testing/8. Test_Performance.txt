@@ -1,0 +1,2 @@
+8. Test_Performance_Power_Consumption.txt
+Monitorea el consumo de corriente del sistema bajo carga de transmisión continua. Verifica que el diseño sea compatible con la duración esperada de las baterías (NFR-02).

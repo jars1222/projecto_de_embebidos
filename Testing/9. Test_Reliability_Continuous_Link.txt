@@ -1,0 +1,2 @@
+9. Test_Reliability_Continuous_Link.txt
+Prueba de estrés que mantiene la comunicación activa durante una sesión de uso prolongada. El sistema debe operar de manera estable sin reinicios ni bloqueos de software (NFR-03).

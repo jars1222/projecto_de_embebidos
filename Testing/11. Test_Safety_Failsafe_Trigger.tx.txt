@@ -1,0 +1,2 @@
+11. Test_Safety_Failsafe_Trigger.txt
+Valida que el dron ejecute un aterrizaje seguro si se pierde la comunicación por más de un tiempo determinado. Esencial para cumplir con las normas básicas de seguridad UAV.

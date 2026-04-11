@@ -1,0 +1,2 @@
+5. Test_Integration_LoRa_Link.txt
+Valida el emparejamiento entre el transmisor (TX) y el receptor (RX). Se mide la tasa de éxito en el envío de paquetes de datos a corta distancia para confirmar que el protocolo LoRa sea funcional.

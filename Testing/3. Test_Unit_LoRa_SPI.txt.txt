@@ -1,0 +1,2 @@
+3. Test_Unit_LoRa_SPI.txt
+Verifica la comunicación entre el MCU y el módulo LoRa mediante la interfaz SPI o UART. Se comprueba que los registros del chip de radio sean accesibles y configurables.

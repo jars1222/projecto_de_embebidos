@@ -1,0 +1,2 @@
+14. Test_Maintainability_Modular_Swap.txt
+Verifica la facilidad para reemplazar módulos como el chip LoRa o los motores. Asegura que el diseño físico permita reparaciones rápidas sin dañar la estructura principal (NFR-05).

@@ -1,0 +1,2 @@
+2. Test_Unit_Joystick_ADC.txt
+Prueba la lectura analógica de los joysticks (Ejes X e Y). Verifica que el MCU convierta correctamente la señal física en valores digitales dentro del rango esperado (ej. 0-1023).

@@ -1,0 +1,2 @@
+12. Test_Safety_Physical_PCB.txt
+Inspección técnica de la placa de circuito impreso para descartar cortocircuitos o fallas de soldadura. Se verifica la integridad eléctrica antes de conectar la alimentación principal

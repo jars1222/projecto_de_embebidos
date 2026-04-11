@@ -1,0 +1,2 @@
+7. Test_Performance_Latency.txt
+Mide el tiempo transcurrido desde el movimiento del joystick hasta la respuesta en el dron. El objetivo es garantizar un tiempo de respuesta aceptable para el control en tiempo real (NFR-01)
