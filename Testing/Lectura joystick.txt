@@ -1,0 +1,18 @@
+Lectura_Joystick
+
+PRUEBA UNITARIA UT-01: INTERFAZ DE USUARIO (JOYSTICKS)
+REFERENCIA: FR-03 [cite: 66]
+
+1. DESCRIPCIÓN
+Validar que el microcontrolador (MCU) interprete correctamente las variaciones de voltaje 
+producidas por los joysticks analógicos del control remoto[cite: 16, 81, 102].
+
+2. PROCEDIMIENTO DE PRUEBA
+- Conectar los ejes X e Y del joystick a los pines ADC del microcontrolador[cite: 82].
+- Cargar firmware de prueba para lectura serial de valores analógicos.
+- Mover el joystick a sus posiciones extremas (arriba, abajo, izquierda, derecha) y centro.
+
+3. CRITERIOS DE ACEPTACIÓN
+- El valor digital debe oscilar entre 0 y 1023 (para ADC de 10 bits).
+- El "punto muerto" del joystick debe ser consistente para evitar derivas en el vuelo.
+- La lectura debe ser fluida, sin saltos bruscos que indiquen ruido eléctrico[cite: 73].

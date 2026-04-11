@@ -1,0 +1,19 @@
+DOCUMENTO DE ESTRATEGIA: PLAN MAESTRO DE TESTING
+PROYECTO: SISTEMA DE CONTROL DE DRON CON COMUNICACIÓN LORA
+VERSIÓN: 1.0
+
+1. OBJETIVO DE LAS PRUEBAS
+El objetivo primordial es garantizar que el sistema de control inalámbrico sea confiable, 
+seguro y responda en tiempo cercano al real[cite: 67, 90]. Se busca validar que cada 
+componente electrónico (MCU, LoRa, Joysticks) funcione según las especificaciones del 
+fabricante antes de la integración final en la PCB[cite: 20, 21, 60].
+
+2. RESPONSABILIDADES
+- Pruebas de Firmware y Comunicación: Salvador y Rafael[cite: 110].
+- Pruebas de Hardware y Electrónica: Jair y Salvador[cite: 107].
+- Validación de Ensamblaje: Salvador y Daniel[cite: 106].
+
+3. AMBIENTE DE PRUEBAS
+- Laboratorio de electrónica con osciloscopio y multímetro para señales SPI/UART[cite: 83].
+- Entorno abierto para pruebas de alcance de radiofrecuencia LoRa[cite: 53].
+- Banco de pruebas estático para el dron (sin hélices) por seguridad[cite: 92].
